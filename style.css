@@ -1,0 +1,19 @@
+:root {
+  /* Vektor Tools brändivärit */
+  --color-background: #FFFFFF;
+  --color-primary: #2A160C;
+  --color-secondary: #99592A;
+  --color-accent: #9A8575;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: --color-primary;
+  background-color: --color-background;
+}
