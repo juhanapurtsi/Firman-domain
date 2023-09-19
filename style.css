@@ -156,7 +156,7 @@ nav {
     margin-bottom: -12rem;
   }
   .bio {
-    padding: 14rem 3rem 1rem 3rem;
+    padding: 14rem 3rem 3rem 3rem;
   }
   .bio h3 {
     font-size: 2.5rem;
@@ -172,3 +172,22 @@ nav {
     padding: 1rem 3rem 1rem 920px;
   }
 }
+
+/* Logopalkin tyylit. */
+.logo-wrapper img {
+  width: 600px;
+}
+
+/* Alapalkin tyylit. */
+footer {
+  background-color: var(--color-accent);
+  color: var(--color-background);
+  padding: 3rem 1rem;
+  line-height: 1.8;
+}
+@media (min-width: 800px) {
+  footer {
+    padding: 3rem;
+  }
+}
+
