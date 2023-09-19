@@ -24,46 +24,71 @@ body {
   background-color: var(--color-background);
 }
 
+/* Headerin tyylit. */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 1rem 1rem;
 }
-
 .logo img {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
 }
-
 .items {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 1.5rem;
 }
-
 .items a {
   text-decoration: none;
   color: var(--color-primary);
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
 }
-
 .items a:hover {
   text-decoration: underline;
 }
 
+@media (min-width: 800px) {
+  nav {
+    padding: 1rem 3rem;
+  }
+  .logo img {
+    width: 72px;
+    height: 72px;
+  }
+  .items {
+    gap: 4rem;
+  }
+  .items a {
+    font-size: 1.5rem;
+  }
+}
+
+/* Hero-elementin tyylit. */
 .hero {
   display: flex;
   align-items: center;
-  height: 50rem;
-  padding: 1rem 3rem;
+  height: 20rem;
+  padding: 1rem 1rem;
 }
-
 .hero h1 {
-  font-size: 8rem;
+  font-size: 4rem;
+}
+.hero h2 {
+  font-size: 1.5rem;
 }
 
-.hero h2 {
-  font-size: 3rem;
+@media (min-width: 800px) {
+  .hero {
+    height: 40rem;
+    padding: 1rem 3rem;
+  }
+  .hero h1 {
+    font-size: 8rem;
+  }
+  .hero h2 {
+    font-size: 3rem;
+  }
 }
