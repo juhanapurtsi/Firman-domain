@@ -106,7 +106,7 @@ nav {
 }
 @media (min-width: 800px) {
   .hero {
-    height: 40rem;
+    height: 30rem;
     padding: 1rem 3rem;
   }
   .hero h1 {
@@ -123,11 +123,22 @@ nav {
 }
 
 /* Kuvaus-elementin tyylit */
+.bio-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.landing-image {
+  width: 800px;
+  max-width: 90vw;
+  margin-bottom: -5rem;
+  margin-left: 1rem;
+  z-index: 100;
+}
 .bio {
   display: flex;
   align-items: center;
   min-height: 20rem;
-  padding: 1rem 1rem;
+  padding: 7rem 1rem 1rem 1rem;
   background-color: var(--color-primary);
   color: var(--color-background);
 }
@@ -140,8 +151,12 @@ nav {
   line-height: 1.5;
 }
 @media (min-width: 800px) {
+  .landing-image {
+    margin-left: 3rem;
+    margin-bottom: -12rem;
+  }
   .bio {
-    padding: 1rem 3rem;
+    padding: 14rem 3rem 1rem 3rem;
   }
   .bio h3 {
     font-size: 2.5rem;
@@ -149,5 +164,11 @@ nav {
   .bio p {
     font-size: 1.5rem;
     line-height: 1.8;
+  }
+}
+@media (min-width: 1400px) {
+  /* wrap the text to the right on wide screens. */
+  .bio {
+    padding: 1rem 3rem 1rem 920px;
   }
 }
