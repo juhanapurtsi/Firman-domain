@@ -11,6 +11,11 @@
     src:url("public/ProstoOneRegular.ttf");
 }
 
+@font-face {
+    font-family: Albert Sans Regular;
+    src:url("public/AlbertSans-Regular.ttf");
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -18,7 +23,7 @@
 }
 
 body {
-  font-family: 'Prosto One Regular', sans-serif;
+  font-family: 'Albert Sans Regular', sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: var(--color-primary);
@@ -39,7 +44,7 @@ nav {
 .items {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.3rem;
 }
 .items a {
   text-decoration: none;
@@ -60,7 +65,7 @@ nav {
     height: 72px;
   }
   .items {
-    gap: 4rem;
+    gap: 2rem;
   }
   .items a {
     font-size: 1.5rem;
@@ -75,6 +80,8 @@ nav {
   padding: 1rem 1rem;
 }
 .hero h1 {
+  font-family: 'Prosto One Regular';
+  text-transform: uppercase;
   font-size: 4rem;
   line-height: 0.8;
 }
@@ -110,7 +117,7 @@ nav {
     padding: 1rem 3rem;
   }
   .hero h1 {
-    font-size: 8rem;
+    font-size: 6rem;
   }
   .hero h2 {
     font-size: 3rem;
@@ -138,7 +145,7 @@ nav {
   display: flex;
   align-items: center;
   min-height: 20rem;
-  padding: 7rem 1rem 1rem 1rem;
+  padding: 7rem 1rem 2rem 1rem;
   background-color: var(--color-primary);
   color: var(--color-background);
 }
@@ -156,7 +163,7 @@ nav {
     margin-bottom: -12rem;
   }
   .bio {
-    padding: 14rem 3rem 3rem 3rem;
+    padding: 14rem 3rem 4rem 3rem;
   }
   .bio h3 {
     font-size: 2.5rem;
@@ -176,6 +183,7 @@ nav {
 /* Logopalkin tyylit. */
 .logo-wrapper img {
   width: 600px;
+  max-width: 90vw;
 }
 
 /* Alapalkin tyylit. */
