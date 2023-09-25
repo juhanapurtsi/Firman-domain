@@ -29,6 +29,12 @@ body {
   color: var(--color-primary);
   background-color: var(--color-background);
 }
+a {
+  color: var(--color-secondary);
+}
+a:hover {
+  color: var(--color-primary);
+}
 
 /* Headerin tyylit. */
 nav {
@@ -87,16 +93,16 @@ nav {
   position: absolute;
   object-fit: cover;
   z-index: -1;
-  opacity: 0.2;
   height: 30rem;
   width: 100%;
 }
 .hero-background img {
   object-fit: cover;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
   width: 100%;
   height: 100%;
+  /* opacity: 0.2; */
+  -webkit-filter: grayscale(100%) opacity(20%);
+  filter: grayscale(100%) opacity(20%);
 }
 .hero-logo {
   max-width: 20rem;
@@ -214,10 +220,27 @@ nav {
   }
 }
 
-/* Logopalkin tyylit. */
-.logo-wrapper img {
-  width: 600px;
-  max-width: 90vw;
+/* Yhteydenottopalkin tyylit. */
+.quick-contact {
+  display: flex;
+  padding: 3rem 1rem;
+}
+.contact div {
+  max-width: 52rem;
+}
+@media (min-width: 800px) {
+  .quick-contact {
+    padding: 5rem 3rem;
+  }
+}
+.quick-contact h3 {
+  padding: .5rem;
+  font-size: 2.5rem;
+}
+.quick-contact p {
+  font-size: 1.1rem;
+  padding: .5rem;
+  line-height: 1.4;
 }
 
 /* Alapalkin tyylit. */
@@ -256,12 +279,6 @@ footer {
   font-size: 1.1rem;
   padding: .5rem;
   line-height: 1.4;
-}
-.contact a {
-  color: var(--color-secondary);
-}
-.contact a:hover {
-  color: var(--color-primary);
 }
 
 
