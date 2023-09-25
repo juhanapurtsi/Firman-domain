@@ -133,26 +133,25 @@ nav {
 }
 
 /* Kuvaus-elementin tyylit */
-.bio-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-.landing-image {
-  width: 800px;
-  max-width: 90vw;
-  margin-bottom: -5rem;
-  margin-left: 1rem;
-  z-index: 100;
-}
 .bio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   display: flex;
   align-items: center;
   min-height: 20rem;
-  padding: 7rem 1rem 2rem 1rem;
+  padding: 2.5rem 1rem 2.5rem 1rem;
   background-color: var(--color-primary);
   color: var(--color-background);
 }
+.bio img {
+  width: 700px;
+  max-width: 90vw;
+  z-index: 100;
+}
 .bio h3 {
+  padding-top: 1.5rem;
+  padding-bottom: .5rem;
   font-size: 1.5rem;
   line-height: 2;
 }
@@ -161,12 +160,8 @@ nav {
   line-height: 1.5;
 }
 @media (min-width: 800px) {
-  .landing-image {
-    margin-left: 3rem;
-    margin-bottom: -12rem;
-  }
   .bio {
-    padding: 14rem 3rem 4rem 3rem;
+    padding: 4rem 3rem 4rem 3rem;
   }
   .bio h3 {
     font-size: 2.5rem;
@@ -177,9 +172,12 @@ nav {
   }
 }
 @media (min-width: 1400px) {
-  /* wrap the text to the right on wide screens. */
   .bio {
-    padding: 4rem 3rem 4rem 920px;
+    padding: 4rem 3rem 4rem 3rem;
+    flex-wrap: nowrap;
+  }
+  .bio div {
+    padding: 4rem 3rem;
   }
 }
 
