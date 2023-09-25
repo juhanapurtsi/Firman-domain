@@ -78,9 +78,22 @@ nav {
 /* Hero-elementin tyylit. */
 .hero {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  height: 20rem;
+  min-height: 20rem;
   padding: 1rem 1rem;
+}
+.hero-heading {
+  max-width: 30rem;
+}
+.hero-video {
+  max-width: 90vw;
+}
+.hero-video video {
+  margin: 2rem 0;
+  width: 100%;
 }
 .hero h1 {
   font-family: 'Prosto One Regular';
@@ -116,7 +129,7 @@ nav {
 }
 @media (min-width: 800px) {
   .hero {
-    height: 30rem;
+    min-height: 40rem;
     padding: 1rem 3rem;
   }
   .hero h1 {
@@ -131,12 +144,17 @@ nav {
     padding: 0.25em 0.75em;
   }
 }
+@media (min-width: 1500px) {
+  .hero-heading {
+    max-width: 60rem;
+  }
+}
 
 /* Kuvaus-elementin tyylit */
 .bio {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   display: flex;
   align-items: center;
   min-height: 20rem;
@@ -145,12 +163,12 @@ nav {
   color: var(--color-background);
 }
 .bio img {
+  padding-top: 1.5rem;
   width: 700px;
   max-width: 90vw;
   z-index: 100;
 }
 .bio h3 {
-  padding-top: 1.5rem;
   padding-bottom: .5rem;
   font-size: 1.5rem;
   line-height: 2;
