@@ -223,9 +223,21 @@ nav {
 /* Yhteydenottopalkin tyylit. */
 .quick-contact {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
   padding: 3rem 1rem;
 }
-.contact div {
+.quick-contact-img {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.quick-contact-img img {
+  width: 100%;
+}
+.quick-contact div {
   max-width: 52rem;
 }
 @media (min-width: 800px) {
