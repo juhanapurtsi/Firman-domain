@@ -9,11 +9,11 @@
   -->
 
   <!-- Isoin otsikko joka näkyy selaimen osoitepalkissa ja Google-haussa -->
-  <title>Vektor Tools</title>
+  <title>Yhteystiedot | Vektor Tools</title>
 
   <!-- Lyhyt kuvaus sivusta, joka näkyy Google-haussa. -->
   <meta name="description"
-    content="Vektor Tools tarjoaa asiakkaalle työvälinesuunnittelun tuotantovalmiina kokonaisuutena 3D-malleineen ja piirustuksineen, tai asiantuntijana osana asiakkaan suunnittelutiimiä.">
+    content="Vektor Tools tarjoaa asiakkaalle työvälinesuunnittelun tuotantoon siirrettävänä kokonaisuutena 3D-malleineen ja piirustuksineen, tai asiantuntijana osana asiakkaan suunnittelutiimiä.">
 
   <!-- Pikakuvakkeen ikoni -->
   <link rel="shortcut icon" href="public/favicon.ico" />
@@ -24,7 +24,7 @@
   <!-- *SOME-JUTTUJA* -->
 
   <!-- Otsikko ja kuvaus, jotka näkyy some-linkkauksissa. -->
-  <meta property="og:title" content="Vektor Tools" />
+  <meta property="og:title" content="Yhteystiedot | Vektor Tools" />
   <meta property="og:description"
     content="Vektor Tools tarjoaa asiakkaalle työvälinesuunnittelun tuotantoon siirrettävänä kokonaisuutena 3D-malleineen ja piirustuksineen, tai asiantuntijana osana asiakkaan suunnittelutiimiä." />
 
@@ -35,8 +35,8 @@
   <meta property="og:url" content="https://vektortools.fi" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <meta property="og:site_name" content="Vektor Tools" />
-  <meta name="twitter:image:alt" content="insinööritoimisto" />
+  <meta property="og:site_name" content="Yhteystiedot | Vektor Tools" />
+  <meta name="twitter:image:alt" content="Asiantuntijapalvelut" />
 
   <!-- *TEKNIIKKAJUTTUJA* -->
 
@@ -54,36 +54,42 @@
     <nav>
       <div class="logo">
         <a href="/">
-          <img src="public/vektor-tools-logo.png" alt="Vektor Tools logo" />
+          <img src="public/vektor-tools-logo.png" alt="Etusivu" />
         </a>
       </div>
       <div class="items">
-        <a href="yhteystiedot">Yhteystiedot</a>
+        <a href="yhteystiedot" class="selected">Yhteystiedot</a>
       </div>
     </nav>
   </header>
 
-  <!-- Sivun Hero-elementti eli isoin otsikko -->
-  <section class="hero">
+  <!-- Yhteystiedot -->
+  <section class="contact">
     <div>
-      <h1>Vektor Tools</h1>
-      <h2>Insinööritoimisto</h2>
-      <a href="/yhteystiedot">Ota yhteyttä</a>
-    </div>
-  </section>
-
-  <!-- Kuvaus-elementti -->
-  <section class="bio-wrapper">
-    <img class="landing-image" src="public/etusivukuva.jpg" alt="" />
-    <div class="bio">
-      <div>
-        <h3>Työvälinesuunnittelu</h3>
-        <p>
-          Vektor Tools tarjoaa asiakkaalle työvälinesuunnittelun tuotantovalmiina kokonaisuutena 3D-malleineen
-          ja
-          piirustuksineen, tai asiantuntijana osana asiakkaan suunnittelutiimiä.
-        </p>
-      </div>
+      <h1>Palveluksessasi</h1>
+      <p>
+        Olen Juhana Purtsi.
+        Alun perin CNC-koneistaja ja ohjelmoija tämän lisäksi nykyisin myös koneinsinööri sekä
+        työkalusuunnittelija.
+      </p>
+      <p>
+        Otahan yhteyttä niin etsitään teille sopiva ratkaisu!
+      </p>
+      <p>
+        <a href="tel:+358400291939">
+          +358 400 29 19 39
+        </a>
+        <br>
+        <a href="mailto:juhana@vektortools.fi">
+          juhana@vektortools.fi
+        </a>
+      </p>
+      <p>
+        Vektor Tools Oy<br>
+        Mullintie 4 B 61<br>
+        20300 Turku<br>
+        3380325-6<br>
+      </p>
     </div>
   </section>
 
