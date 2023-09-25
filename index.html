@@ -46,6 +46,11 @@
   <meta name="msapplication-tap-highlight" content="no">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
+
+  <script>
+    // Autoplay video.
+    document.getElementById('vid').play();
+  </script>
 </head>
 
 <body>
@@ -77,7 +82,7 @@
 
   <!-- Kuvaus-elementti -->
   <section class="bio">
-    <video autoplay loop muted>
+    <video autoplay loop muted id="video">
       <source src="public/vektor-tools-herovideo.mp4">
     </video>
     <div>
