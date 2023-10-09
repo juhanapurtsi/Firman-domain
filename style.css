@@ -255,6 +255,11 @@ nav {
   line-height: 1.4;
 }
 
+/* Logopalkin tyylit. */
+.logo-wrapper img {
+  max-width: 90vw;
+}
+
 /* Alapalkin tyylit. */
 footer {
   background-color: var(--color-accent);
